@@ -9,6 +9,8 @@ Description: More about what it does (maybe more than one line)
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Suggests: testthat,
+    covr
 URL: https://github.com/bfatemi/hider
 BugReports: https://github.com/bfatemi/hider/issues
+Depends: sodium
