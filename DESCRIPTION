@@ -10,7 +10,7 @@ Description: The goal of hider is to simplify secure encryption so the average
     called "hide" and "unhide" and it uses a pair of keys that can be provided, or
     can be generated using a third function called "keychain".
 Depends:
-    R (>= 3.3.2),
+    R (>= 3.3.1),
     sodium
 License: MIT + file LICENSE
 Encoding: UTF-8
