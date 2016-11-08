@@ -2,7 +2,7 @@
 
 The goal of hider is to simplify secure encryption so the average R user can utilize it hasslefree
 
-## Example
+## Example 
 
 This package provides two functions (wrappers around functionality from the package 'sodium') to hide and unhide any object with as few steps as possible.
 
