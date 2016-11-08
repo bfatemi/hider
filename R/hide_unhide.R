@@ -13,7 +13,7 @@
 #'
 #' @param obj An object to hide using secure encryption
 #' @param hidden_obj A hidden object to decrypt ('unhide')
-#' @param public A public key used to encrypt data with the function \code{hide}
+#' @param pubkey A public key used to encrypt data with the function \code{hide}
 #' @param privatekey A private key that is used to decrypt data
 #'
 #' @import sodium
@@ -24,7 +24,7 @@ NULL
 #' @describeIn encryption A function to hide (encrypt) an R object
 #' @export
 hide <- function(obj, pubkey){
-  sObj <- serialize(dat, NULL)                       # serialize data
+  sObj <- serialize(obj, NULL)                       # serialize data
   hidden_obj <- sodium::simple_encrypt(sObj, pubkey) # encrypt data with public key
   hidden_obj
 }
@@ -42,8 +42,9 @@ unhide <- function(hidden_obj, privatekey){
 keychain <- function(){
   # private key is used for decryption
   # the resulting public key is used for encryption
-  list(privkey = sodium::keygen(),
-       pubkey = sodium::pubkey(key))
+  priv <- sodium::keygen()
+  pub <- sodium::pubkey(priv)
+  list(privkey = priv, pubkey = pub)
 }
 
 

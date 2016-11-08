@@ -1,16 +1,21 @@
 Package: hider
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: file LICENSE
+Title: Simplified Secure Encryption
+Version: 0.0.0.9000
+Authors@R: person("Bobby", "Fatemi", email = "bfatemi07@gmail.com", role = c("aut", "cre"))
+Description: The goal of hider is to simplify secure encryption so the average
+    R user can utilize it hasslefree. Most people will avoid encryption because
+    to employ it at even a basic level, requires a basic understanding of the
+    logic that makes RSA very secure. This package provides two functions that
+    are wrappers around functionality from the package 'sodium'. The functions are
+    called "hide" and "unhide" and it uses a pair of keys that can be provided, or
+    can be generated using a third function called "keychain".
+Depends:
+    R (>= 3.3.2),
+    sodium
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat,
+Suggests:
+    testthat,
     covr
-URL: https://github.com/bfatemi/hider
-BugReports: https://github.com/bfatemi/hider/issues
-Depends: sodium
+RoxygenNote: 5.0.1
