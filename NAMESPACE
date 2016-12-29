@@ -3,4 +3,5 @@
 export(hide)
 export(keychain)
 export(unhide)
+import(methods)
 import(sodium)
