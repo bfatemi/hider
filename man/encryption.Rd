@@ -3,8 +3,8 @@
 \name{encryption}
 \alias{encryption}
 \alias{hide}
-\alias{keychain}
 \alias{unhide}
+\alias{keychain}
 \title{Encrypt and Decrypt Private Datasets}
 \usage{
 hide(obj, pubkey)
@@ -42,6 +42,7 @@ are saved locally thereafter.
 
 \item \code{keychain}: used to generate the keychain if needed
 }}
+
 \examples{
 
 # The function keychain creates a private key,
@@ -63,4 +64,3 @@ unhide(hiddenObj, keys.private)
 
 
 }
-

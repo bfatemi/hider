@@ -9,15 +9,18 @@ Description: The goal of hider is to simplify secure encryption so the average
     are wrappers around functionality from the package 'sodium'. The functions are
     called "hide" and "unhide" and it uses a pair of keys that can be provided, or
     can be generated using a third function called "keychain".
-Depends:
-    R (>= 3.3.1),
-    sodium
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests:
     testthat,
     covr
-RoxygenNote: 5.0.1
-Imports: rstudioapi,
-    methods
+RoxygenNote: 6.1.1
+Imports: 
+    rstudioapi,
+    methods,
+    pryr,
+    rlang,
+    protolite,
+    httr,
+    sodium

@@ -16,7 +16,7 @@
 #' @param pubkey A public key used to encrypt data with the function \code{hide}
 #' @param privatekey A private key that is used to decrypt data
 #'
-#' @import sodium
+#' @importFrom sodium keygen pubkey simple_decrypt simple_encrypt
 #' @example inst/examples/ex-hide_unhide.R
 #' @name encryption
 NULL
