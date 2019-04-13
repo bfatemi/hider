@@ -52,3 +52,6 @@ trav_token <- function(pwd=NULL){
   path <- system.file("tokens", "trav_ciph", package = "rauth")
   readRDS(path)
 }
+
+
+

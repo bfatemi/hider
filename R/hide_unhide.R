@@ -40,12 +40,24 @@ unhide <- function(hidden_obj, privatekey){
 #' @describeIn encryption used to generate the keychain if needed
 #' @export
 keychain <- function(){
-  # private key is used for decryption
-  # the resulting public key is used for encryption
   priv <- sodium::keygen()
-  pub <- sodium::pubkey(priv)
+  pub  <- sodium::pubkey(priv)
   list(privkey = priv, pubkey = pub)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
